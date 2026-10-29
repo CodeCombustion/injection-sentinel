@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          { "type": "command", "command": "python /path/to/injection_sentinel.py", "timeout": 15, "statusMessage": "Injection sentinel" }
+        ]
+      }
+    ]
+  }
+}

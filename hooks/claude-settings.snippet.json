@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "WebFetch|WebSearch|mcp__Claude_Browser__.*|mcp__claude-in-chrome__.*|mcp__remote-devices__.*",
+        "hooks": [
+          { "type": "command", "command": "python /path/to/injection_sentinel.py", "timeout": 15, "statusMessage": "Injection sentinel" }
+        ]
+      }
+    ]
+  }
+}
